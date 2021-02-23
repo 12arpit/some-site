@@ -1,0 +1,35 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-div{
+    display: flex;
+}
+
+.nav > .left-div > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.links{
+    height: 20px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.links a {
+    color: teal;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav:hover{
+    border-bottom: 1px solid purple;
+}
+
+.nav a:hover{
+    color: yellowgreen;
+}
