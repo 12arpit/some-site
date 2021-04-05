@@ -3,13 +3,15 @@
     <head>
         <meta charset="utf-8"/>
         <title>Page Title</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href=styles.css>
     </head>
     <body>
         <div class="container">
             <div class="nav-wrapper">
                 <div class="left-side">
-                    <div class="nav-link-wrapper">
+                    <div class="nav-link-wrapper active-nav-link">
                         <a href="index.html">Home</a>
                     </div>
                     <div class="nav-link-wrapper">
@@ -31,11 +33,11 @@
 
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
-                            <img src="images/logos/quip.png">
+                            <img src="images/logos/crondose.png">
                         </div>
 
                         <div class="subtitle">
-
+                            It's cron
                         </div>
                     </div>
                 </div>
@@ -45,11 +47,11 @@
 
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
-                            <img src="images/logos/quip.png">
+                            <img src="images/logos/dailysmarty.png">
                         </div>
 
                         <div class="subtitle">
-                            
+                            dailysmarty!
                         </div>
                     </div>
                 </div>
@@ -59,11 +61,11 @@
 
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
-                            <img src="images/logos/quip.png">
+                            <img src="images/logos/dashtrack.png">
                         </div>
 
                         <div class="subtitle">
-                            
+                            dashtrack!
                         </div>
                     </div>
                 </div>
@@ -73,11 +75,11 @@
 
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
-                            <img src="images/logos/quip.png">
+                            <img src="images/logos/devcamp.png">
                         </div>
 
                         <div class="subtitle">
-                            
+                            devcamp is awesome!
                         </div>
                     </div>
                 </div>
@@ -87,11 +89,11 @@
 
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
-                            <img src="images/logos/quip.png">
+                            <img src="images/logos/devtrunk.png">
                         </div>
 
                         <div class="subtitle">
-                            
+                            devtrunk though
                         </div>
                     </div>
                 </div>
@@ -101,11 +103,11 @@
 
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
-                            <img src="images/logos/quip.png">
+                            <img src="images/logos/edutechional.png">
                         </div>
 
                         <div class="subtitle">
-                            
+                            edutechional!!
                         </div>
                     </div>
                 </div>
@@ -115,11 +117,11 @@
 
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
-                            <img src="images/logos/quip.png">
+                            <img src="images/logos/eventbrite.png">
                         </div>
 
                         <div class="subtitle">
-                            
+                            eventbrite?
                         </div>
                     </div>
                 </div>
@@ -129,11 +131,11 @@
 
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
-                            <img src="images/logos/quip.png">
+                            <img src="images/logos/ministry-safe.png">
                         </div>
 
                         <div class="subtitle">
-                            
+                            safe ministry!
                         </div>
                     </div>
                 </div>
@@ -143,11 +145,11 @@
 
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
-                            <img src="images/logos/quip.png">
+                            <img src="images/logos/open-devos.png">
                         </div>
 
                         <div class="subtitle">
-                            
+                            devos but open
                         </div>
                     </div>
                 </div>
@@ -161,7 +163,7 @@
                         </div>
 
                         <div class="subtitle">
-                            
+                            hola quip!
                         </div>
                     </div>
                 </div>
@@ -171,11 +173,11 @@
 
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
-                            <img src="images/logos/quip.png">
+                            <img src="images/logos/shop-hacker.png">
                         </div>
 
                         <div class="subtitle">
-                            
+                            hacker!
                         </div>
                     </div>
                 </div>
@@ -185,11 +187,11 @@
 
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
-                            <img src="images/logos/quip.png">
+                            <img src="images/logos/toastability.png">
                         </div>
 
                         <div class="subtitle">
-                            
+                            toasty!!
                         </div>
                     </div>
                 </div>
@@ -201,4 +203,17 @@
 
         </div>
     </body>
+    <script>
+        const portfolioItems=document.querySelectorAll('.portfolio-item-wrapper')
+
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            })
+        })
+    </script>
 </html>
